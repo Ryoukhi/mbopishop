@@ -40,4 +40,8 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private List<Order> orders;
+
+    /**
+     * Un utilisateur peut passer plusieurs commandes
+     */
 }

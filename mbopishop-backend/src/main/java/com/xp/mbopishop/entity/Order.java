@@ -46,4 +46,10 @@ public class Order {
 
     @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
     private Payment payment;
+
+    /**
+     * Une Commande appartient à un utilisateur
+     * Une commande contient plusieurs articles
+     * Une commande a un paiement
+     */
 }

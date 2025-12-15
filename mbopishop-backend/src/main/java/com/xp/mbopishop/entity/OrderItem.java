@@ -21,13 +21,18 @@ public class OrderItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    private Product product;
-
     private int quantity;
 
     private double price;
 
+    /**
+     * Un OrderItem correspond à un produit
+     * Plusieurs OrderItems appartiennent à une commande
+     */
     @ManyToOne
     private Order order;
+
+    @ManyToOne
+    private Product product;
+
 }

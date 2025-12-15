@@ -28,4 +28,9 @@ public class CartItem {
 
     @ManyToOne
     private Cart cart;
+
+    /**
+     * Un CartItem référence un produit
+     * Plusieurs CartItems peuvent appartenir à un panier
+     */
 }
